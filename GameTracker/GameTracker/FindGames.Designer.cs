@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.gameInputTxt = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
@@ -40,15 +40,16 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(113, 23);
             this.button1.TabIndex = 0;
-            this.button1.Text = "Search By System";
+            this.button1.Text = "Search By Name";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox1
+            // gameInputTxt
             // 
-            this.textBox1.Location = new System.Drawing.Point(131, 12);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(162, 20);
-            this.textBox1.TabIndex = 1;
+            this.gameInputTxt.Location = new System.Drawing.Point(131, 12);
+            this.gameInputTxt.Name = "gameInputTxt";
+            this.gameInputTxt.Size = new System.Drawing.Size(162, 20);
+            this.gameInputTxt.TabIndex = 1;
             // 
             // button2
             // 
@@ -75,7 +76,7 @@
             this.ClientSize = new System.Drawing.Size(604, 486);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.gameInputTxt);
             this.Controls.Add(this.button1);
             this.Name = "FindGames";
             this.Text = "FindGames";
@@ -87,7 +88,7 @@
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox gameInputTxt;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.RichTextBox richTextBox1;
     }
